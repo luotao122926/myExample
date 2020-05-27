@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: hello-spring-cloud-provider
+
+  datasource:
+    url: jdbc:oracle:thin:@10.16.66.131:1601:cimsdev
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: cims
+    password: 281ved_CIMS
+
+server:
+  port: 9091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: false
+
+mybatis:
+  mapper-locations: classpath*:mappers/*.xml
+  type-aliases-package: org.example.enity
+
+
+
+

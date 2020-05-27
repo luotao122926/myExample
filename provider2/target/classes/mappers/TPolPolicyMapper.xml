@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.dao.TPolPolicyMapper">
+  <resultMap id="BaseResultMap" type="org.example.entity.TPolPolicy">
+    <!--@mbg.generated-->
+    <!--@Table T_POL_POLICY-->
+    <id column="POLICY_ID" jdbcType="DECIMAL" property="policyId" />
+    <result column="POLICY_NUMBER" jdbcType="VARCHAR" property="policyNumber" />
+    <result column="POLICY_DOC_NUMBER" jdbcType="VARCHAR" property="policyDocNumber" />
+    <result column="POLICY_NAME" jdbcType="VARCHAR" property="policyName" />
+    <result column="COMMENTS" jdbcType="VARCHAR" property="comments" />
+    <result column="POLICY_ORDER_NUMBER" jdbcType="VARCHAR" property="policyOrderNumber" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="POLICY_DATE" jdbcType="TIMESTAMP" property="policyDate" />
+    <result column="SALES_CENTER_ID" jdbcType="DECIMAL" property="salesCenterId" />
+    <result column="SALES_CENTER_CODE" jdbcType="VARCHAR" property="salesCenterCode" />
+    <result column="SALES_CENTER_NAME" jdbcType="VARCHAR" property="salesCenterName" />
+    <result column="BEGIN_DATE" jdbcType="TIMESTAMP" property="beginDate" />
+    <result column="END_DATE" jdbcType="TIMESTAMP" property="endDate" />
+    <result column="AFFIRM_DATE" jdbcType="TIMESTAMP" property="affirmDate" />
+    <result column="AFFIRM_BY" jdbcType="VARCHAR" property="affirmBy" />
+    <result column="CLOSE_DATE" jdbcType="TIMESTAMP" property="closeDate" />
+    <result column="CLOSED_BY" jdbcType="VARCHAR" property="closedBy" />
+    <result column="DISCARD_DATE" jdbcType="TIMESTAMP" property="discardDate" />
+    <result column="DISCARD_BY" jdbcType="VARCHAR" property="discardBy" />
+    <result column="DISCARD_BY_NAME" jdbcType="VARCHAR" property="discardByName" />
+    <result column="SALES_MAIN_TYPE" jdbcType="VARCHAR" property="salesMainType" />
+    <result column="CUSTOMER_ID" jdbcType="DECIMAL" property="customerId" />
+    <result column="CUSTOMER_CODE" jdbcType="VARCHAR" property="customerCode" />
+    <result column="CUSTOMER_NAME" jdbcType="VARCHAR" property="customerName" />
+    <result column="ACCOUNT_ID" jdbcType="DECIMAL" property="accountId" />
+    <result column="ACCOUNT_CODE" jdbcType="VARCHAR" property="accountCode" />
+    <result column="DISCOUNT_PAY_DEPT" jdbcType="VARCHAR" property="discountPayDept" />
+    <result column="DISCOUNT_METHOD" jdbcType="VARCHAR" property="discountMethod" />
+    <result column="DISCOUNT_ITEM" jdbcType="VARCHAR" property="discountItem" />
+    <result column="STD_STEP_FLAG" jdbcType="VARCHAR" property="stdStepFlag" />
+    <result column="CAL_METHOD" jdbcType="VARCHAR" property="calMethod" />
+    <result column="MTL_TYPE_BASE_STD_ID" jdbcType="DECIMAL" property="mtlTypeBaseStdId" />
+    <result column="DOC_LAND_AMOUNT" jdbcType="DECIMAL" property="docLandAmount" />
+    <result column="REPORT_DATE" jdbcType="TIMESTAMP" property="reportDate" />
+    <result column="REPORT_STATUS" jdbcType="VARCHAR" property="reportStatus" />
+    <result column="REPORT_ERR_MSG" jdbcType="VARCHAR" property="reportErrMsg" />
+    <result column="ENTITY_ID" jdbcType="DECIMAL" property="entityId" />
+    <result column="ALGORITHM_COMMENT" jdbcType="VARCHAR" property="algorithmComment" />
+    <result column="MAIL_RATE" jdbcType="VARCHAR" property="mailRate" />
+    <result column="BRAND_NAME" jdbcType="VARCHAR" property="brandName" />
+    <result column="BRAND_CODE" jdbcType="VARCHAR" property="brandCode" />
+    <result column="BRAND_ID" jdbcType="DECIMAL" property="brandId" />
+    <result column="OCCUPIED_AMOUNT" jdbcType="DECIMAL" property="occupiedAmount" />
+    <result column="REQUIS_DEPT_CODE" jdbcType="VARCHAR" property="requisDeptCode" />
+    <result column="REQUIS_DEPT_NAME" jdbcType="VARCHAR" property="requisDeptName" />
+    <result column="POLICY_TYPE_ID" jdbcType="DECIMAL" property="policyTypeId" />
+    <result column="DISCARD_REASON" jdbcType="VARCHAR" property="discardReason" />
+    <result column="EFFECTIVE_AMOUNT" jdbcType="DECIMAL" property="effectiveAmount" />
+    <result column="RESULT_DEFINE_CODE" jdbcType="VARCHAR" property="resultDefineCode" />
+    <result column="TEMPLETE_FLAG" jdbcType="VARCHAR" property="templeteFlag" />
+    <result column="CREATED_BY" jdbcType="VARCHAR" property="createdBy" />
+    <result column="CREATION_DATE" jdbcType="TIMESTAMP" property="creationDate" />
+    <result column="LAST_UPDATED_BY" jdbcType="VARCHAR" property="lastUpdatedBy" />
+    <result column="LAST_UPDATE_DATE" jdbcType="TIMESTAMP" property="lastUpdateDate" />
+    <result column="MAIL_TEMPLATE_ID" jdbcType="DECIMAL" property="mailTemplateId" />
+    <result column="REPORT_RATE" jdbcType="VARCHAR" property="reportRate" />
+    <result column="DATA_FLOW_ID" jdbcType="DECIMAL" property="dataFlowId" />
+    <result column="RESULT_DEFINE_NAME" jdbcType="VARCHAR" property="resultDefineName" />
+    <result column="APPENDIX_ID" jdbcType="VARCHAR" property="appendixId" />
+    <result column="ORDER_DATE" jdbcType="TIMESTAMP" property="orderDate" />
+    <result column="AUTO_FLAG" jdbcType="VARCHAR" property="autoFlag" />
+    <result column="VERSION" jdbcType="DECIMAL" property="version" />
+    <result column="BUDGET_FLAG" jdbcType="VARCHAR" property="budgetFlag" />
+    <result column="PROJECT_CODE" jdbcType="VARCHAR" property="projectCode" />
+    <result column="CUST_SOURCE_FLAG" jdbcType="VARCHAR" property="custSourceFlag" />
+    <result column="REF_MODEL" jdbcType="VARCHAR" property="refModel" />
+    <result column="APPLY_TO_CCS_FLAG" jdbcType="VARCHAR" property="applyToCcsFlag" />
+    <result column="POLICY_RELEASE_FLAG" jdbcType="VARCHAR" property="policyReleaseFlag" />
+    <result column="PARENT_POLICY_ID" jdbcType="DECIMAL" property="parentPolicyId" />
+    <result column="CALCULATE_GROUP_NAME" jdbcType="VARCHAR" property="calculateGroupName" />
+    <result column="CALCULATE_GROUP_TYPE" jdbcType="VARCHAR" property="calculateGroupType" />
+    <result column="DISCOUNT_PERIOD" jdbcType="VARCHAR" property="discountPeriod" />
+    <result column="ALGO_ACTIVE_FLAG" jdbcType="VARCHAR" property="algoActiveFlag" />
+    <result column="POLICY_SOURCE_ID" jdbcType="DECIMAL" property="policySourceId" />
+    <result column="CCS_STAT" jdbcType="VARCHAR" property="ccsStat" />
+    <result column="MMP_STAT" jdbcType="VARCHAR" property="mmpStat" />
+    <result column="TERMINAL_ID" jdbcType="DECIMAL" property="terminalId" />
+    <result column="TERMINAL_CODE" jdbcType="VARCHAR" property="terminalCode" />
+    <result column="TERMINAL_NAME" jdbcType="VARCHAR" property="terminalName" />
+    <result column="BI_POLICY_ID" jdbcType="DECIMAL" property="biPolicyId" />
+    <result column="POL_EXPEND_TYPE" jdbcType="VARCHAR" property="polExpendType" />
+    <result column="SRC_BILL_ID" jdbcType="DECIMAL" property="srcBillId" />
+    <result column="SRC_BILL_NUM" jdbcType="VARCHAR" property="srcBillNum" />
+    <result column="SRC_BILL_TYPE" jdbcType="VARCHAR" property="srcBillType" />
+    <result column="OU_ID" jdbcType="DECIMAL" property="ouId" />
+    <result column="SUBSIDY_RATE" jdbcType="DECIMAL" property="subsidyRate" />
+    <result column="POLICY_MAIN_TYPE" jdbcType="VARCHAR" property="policyMainType" />
+    <result column="POLICY_SUB_TYPE" jdbcType="VARCHAR" property="policySubType" />
+    <result column="MIP_DOC_FLAG" jdbcType="VARCHAR" property="mipDocFlag" />
+    <result column="MIP_LOCK_FLAG" jdbcType="VARCHAR" property="mipLockFlag" />
+    <result column="MIP_DOC_NUM" jdbcType="VARCHAR" property="mipDocNum" />
+    <result column="MIP_DOC_NAME" jdbcType="VARCHAR" property="mipDocName" />
+    <result column="MIP_INSTANCE_ID" jdbcType="VARCHAR" property="mipInstanceId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    POLICY_ID, POLICY_NUMBER, POLICY_DOC_NUMBER, POLICY_NAME, COMMENTS, POLICY_ORDER_NUMBER, 
+    "STATUS", POLICY_DATE, SALES_CENTER_ID, SALES_CENTER_CODE, SALES_CENTER_NAME, BEGIN_DATE, 
+    END_DATE, AFFIRM_DATE, AFFIRM_BY, CLOSE_DATE, CLOSED_BY, DISCARD_DATE, DISCARD_BY, 
+    DISCARD_BY_NAME, SALES_MAIN_TYPE, CUSTOMER_ID, CUSTOMER_CODE, CUSTOMER_NAME, ACCOUNT_ID, 
+    ACCOUNT_CODE, DISCOUNT_PAY_DEPT, DISCOUNT_METHOD, DISCOUNT_ITEM, STD_STEP_FLAG, CAL_METHOD, 
+    MTL_TYPE_BASE_STD_ID, DOC_LAND_AMOUNT, REPORT_DATE, REPORT_STATUS, REPORT_ERR_MSG, 
+    ENTITY_ID, ALGORITHM_COMMENT, MAIL_RATE, BRAND_NAME, BRAND_CODE, BRAND_ID, OCCUPIED_AMOUNT, 
+    REQUIS_DEPT_CODE, REQUIS_DEPT_NAME, POLICY_TYPE_ID, DISCARD_REASON, EFFECTIVE_AMOUNT, 
+    RESULT_DEFINE_CODE, TEMPLETE_FLAG, CREATED_BY, CREATION_DATE, LAST_UPDATED_BY, LAST_UPDATE_DATE, 
+    MAIL_TEMPLATE_ID, REPORT_RATE, DATA_FLOW_ID, RESULT_DEFINE_NAME, APPENDIX_ID, ORDER_DATE, 
+    AUTO_FLAG, VERSION, BUDGET_FLAG, PROJECT_CODE, CUST_SOURCE_FLAG, REF_MODEL, APPLY_TO_CCS_FLAG, 
+    POLICY_RELEASE_FLAG, PARENT_POLICY_ID, CALCULATE_GROUP_NAME, CALCULATE_GROUP_TYPE, 
+    DISCOUNT_PERIOD, ALGO_ACTIVE_FLAG, POLICY_SOURCE_ID, CCS_STAT, MMP_STAT, TERMINAL_ID, 
+    TERMINAL_CODE, TERMINAL_NAME, BI_POLICY_ID, POL_EXPEND_TYPE, SRC_BILL_ID, SRC_BILL_NUM, 
+    SRC_BILL_TYPE, OU_ID, SUBSIDY_RATE, POLICY_MAIN_TYPE, POLICY_SUB_TYPE, MIP_DOC_FLAG, 
+    MIP_LOCK_FLAG, MIP_DOC_NUM, MIP_DOC_NAME, MIP_INSTANCE_ID
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.math.BigDecimal" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from T_POL_POLICY
+    where POLICY_ID = #{policyId,jdbcType=DECIMAL}
+  </select>
+</mapper>
